@@ -8,4 +8,4 @@ if lastDigit > 5:
 if lastDigit < 6 and not(lastDigit == 0):
     print("Last digit of {:d} is {:d} and is less than 6 and not 0".format(number, -lastDigit))
 if lastDigit == 0:
-    print("Last digit of {:d} is {:d} and is zero".format(number, lastDigit))
+    print("Last digit of {:d} is {:d} and is 0".format(number, lastDigit))
