@@ -2,14 +2,14 @@
 
 def new_in_list(my_list, idx, element):
 
-    strg = my_list.copy()
+    new = my_list.copy()
 
     if idx < 0:
-        return(strg)
+        return(new)
 
-    elif idx > len(my_list):
-        return(strg)
+    elif idx > len(new):
+        return(new)
 
     else:
-        strg[idx] = element
-        return(strg)
+        new[idx] = element
+        return(new)
