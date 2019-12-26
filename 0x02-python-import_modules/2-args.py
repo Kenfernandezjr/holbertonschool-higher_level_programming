@@ -4,7 +4,7 @@ from sys import argv
 if __name__ == "__main__":
 
     if len(argv[1:]) == 0:
-        print("0 arguments.".format(len(argv)))
+        print("0 arguments.")
 
     elif len(argv[2:]) == 1:
         print("1 argument:")
