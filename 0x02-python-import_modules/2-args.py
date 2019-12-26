@@ -13,4 +13,4 @@ if __name__ == "__main__":
       print("{:d} arguments:".format(len(argv[1:])))
 
   for x in (argv[1:]):
-    print("{:d}: {:s}".format(argv.index(x), x))
+    print("{:d}: {}".format(argv.index(x), x))
