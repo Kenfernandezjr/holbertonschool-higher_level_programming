@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     elif len(argv[2:]) == 1:
         print("1 argument:")
-        print("1: {}".format(argv))
+        print("1:{}".format(argv))
 
     else:
         print("{:d} arguments:".format(len(argv[1:])))
