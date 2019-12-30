@@ -1,1 +1,2 @@
-echo "from sys import stdout; stdout.write('#pythoniscool\n')" | python3
+#!/usr/bin/python3
+import other
