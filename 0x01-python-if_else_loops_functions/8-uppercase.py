@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-import string
-
 def uppercase(str):
     converison = ''
     for i in (str):
