@@ -1,3 +1,1 @@
-#!/usr/bin/python3
-from sys import stdout
-stdout.write('#pythoniscool' + '\n')
+echo "from sys import stdout; stdout.write('#pythoniscool\n')" | python3
