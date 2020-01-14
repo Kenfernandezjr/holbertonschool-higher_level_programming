@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 class Rectangle:
 
     def __init__(self, width=0, height=0):
@@ -39,7 +38,6 @@ class Rectangle:
     def area(self):
         ar = self.__width * self.__height
         return ar
-
 
     def perimeter(self):
 
