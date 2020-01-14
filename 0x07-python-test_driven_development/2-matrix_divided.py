@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 def matrix_divided(matrix, div):
 
-
     if not isinstance(div, int):
         raise TypeError("div must be a number")
 
@@ -21,6 +20,6 @@ def matrix_divided(matrix, div):
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 
             if float(matrix[col][row]) is type:
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix (list of lists) ofintegers/floats")
 
             return [[round(col/div, 2)for col in row]for row in matrix]
