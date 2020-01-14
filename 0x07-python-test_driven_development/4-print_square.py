@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 def print_square(size):
 
     if size is None:
