@@ -1,0 +1,45 @@
+"""
+This is the 0-add_integer doctest
+
+"""
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+    >>> add_integer("", 98)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer("", "")
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer(float, 98)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer(100, -2)
+    98
+
+    >>> add_integer(None, 67)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer(67, None)
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+    >>> add_integer(2.5, 2.5)
+    4
+
+    >>> add_integer(103.3, -2)
+    101
+
+    >>> add_integer("Yeet", "Yeet")
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
