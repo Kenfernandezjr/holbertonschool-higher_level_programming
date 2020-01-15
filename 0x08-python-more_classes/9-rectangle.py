@@ -4,8 +4,8 @@ class Rectangle:
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
         type(self).number_of_instances += 1
 
     def __del__(self):
@@ -44,7 +44,7 @@ class Rectangle:
         self.__width = value
 
     @property
-    def height(self, value):
+    def height(self):
         return self.__height
 
     @height.setter
@@ -87,5 +87,4 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        squares = cls(size, size)
-        return squares
+         return cls(size, size)
