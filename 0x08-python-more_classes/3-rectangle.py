@@ -9,6 +9,9 @@ class Rectangle:
 
         string1 = ""
 
+        if self.__width == 0 or self.__height == 0:
+            return ""
+
         for i in range(self.__height):
             for j in range(self.__width):
                 string1 += "#"
