@@ -27,6 +27,7 @@ class BaseGeometry:
             Subclass created
             """
 
+
 class Rectangle(BaseGeometry):
     """
     inherit class
@@ -48,6 +49,7 @@ class Rectangle(BaseGeometry):
         Printing str of width and height
         """
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
+
 
 class Square(Rectangle):
     """
