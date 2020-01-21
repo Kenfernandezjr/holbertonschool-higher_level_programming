@@ -27,6 +27,7 @@ class BaseGeometry:
             Subclass created
             """
 
+
 class Rectangle(BaseGeometry):
     """
     inherit class
