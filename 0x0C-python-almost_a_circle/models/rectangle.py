@@ -91,23 +91,24 @@ class Rectangle(Base):
             self.width, self.height)
 
     def update(self, *args):
-        if len(args) is 0:
+        if len(args) > 0:
             if len(args) is 1:
-                self.id = args[1]
+                self.id = args[0]
             if len(args) is 2:
-                self.width = args[1]
+                self.id = args[0]
+                self.__width = args[1]
             if len(args) is 3:
                 self.id = args[0]
-                self.width = args[1]
-                self.height = args[2]
+                self.__width = args[1]
+                self.__height = args[2]
             if len(args) is 4:
                 self.id = args[0]
-                self.width = args[1]
-                self.height = args[2]
-                self.x = args[3]
+                self.__width = args[1]
+                self.__height = args[2]
+                self.__x = args[3]
             if len(args) is 5:
                 self.id = args[0]
-                self.width = args[1]
-                self.height = args[2]
-                self.x = args[3]
-                self.y = args[4]
+                self.__width = args[1]
+                self.__height = args[2]
+                self.__x = args[3]
+                self.__y = args[4]
