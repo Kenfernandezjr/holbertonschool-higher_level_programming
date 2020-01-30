@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ Square class/Module """
+
 from models.rectangle import Rectangle
 
 
@@ -16,7 +17,7 @@ class Square(Rectangle):
     def __str__(self):
         """ str for Square """
         return("[Square] ({}) {}/{} - {}".format(
-            self.id, self.x, self.y, self.size))
+            self.id, self.x, self.y, self.width))
 
     @property
     def size(self):
@@ -33,4 +34,19 @@ class Square(Rectangle):
             raise ValueError("width must be > 0")
 
         self.width = value
-        self.height = value
+
+    def update(self, *args, **kwargs):
+        """ make args and kwargs """
+        if len(args) > 0:
+            if len(args) is 1:
+                self.id = args[0]
+            if len(args) is 2:
+                self.size = args[1]
+            if len(args) is 3:
+                self.x = args[2]
+            if len(args) is 4:
+                self.y = args[3]
+        if kwargs is not None:
+            """ key and value arg """
+            for key, value in kwargs.items():
+                setattr(self, key, value)
