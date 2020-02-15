@@ -2,6 +2,7 @@
 """ Base Class Module """
 import json
 
+
 class Base:
     """ Base Class """
     __nb_objects = 0
@@ -17,6 +18,6 @@ class Base:
     def to_json_string(list_dictionaries):
         """ Json list_dictories """
         if list_dictionaries is None:
-            return("[]".format())
+            return "[]"
         else:
             return json.dumps(list_dictionaries)
