@@ -1,2 +1,2 @@
 -- Show table contents and any given argument
-SHOW TABLES IN mysql
+SHOW TABLES FROM mysql
