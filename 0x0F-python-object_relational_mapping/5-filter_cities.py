@@ -26,12 +26,12 @@ if __name__ == "__main__":
     variable for input argument
     '''
     mycursor.execute(
-        """SELECT GROUP_CONCAT(cities.name
+        """SELECT GROUP_CONCAT(DISTINCT cities.name
+        ORDER BY cities.id ASC
         SEPARATOR ', ')
         FROM cities
         JOIN states ON states.id = cities.state_id
-        WHERE BINARY states.name = %s
-        ORDER BY cities.id ASC""", (prime,))
+        WHERE states.name = %s;""", (prime,))
 
     '''
     execute sql code
