@@ -30,7 +30,7 @@ if __name__ == "__main__":
         SEPARATOR ', ')
         FROM cities
         JOIN states ON states.id = cities.state_id
-        WHERE states.name = %s
+        WHERE BINARY states.name = %s
         ORDER BY cities.id ASC""", (prime,))
 
     '''
