@@ -21,17 +21,12 @@ if __name__ == "__main__":
     '''
     cursor
     '''
-    prime = sys.argv[4]
-    '''
-    variable for input argument
-    '''
     mycursor.execute(
-        """SELECT GROUP_CONCAT(DISTINCT cities.name
-        ORDER BY cities.id ASC
-        SEPARATOR ', ')
+        """SELECT cities.name, states.name
         FROM cities
         JOIN states ON states.id = cities.state_id
-        WHERE states.name = %s;""", (prime,))
+        WHERE states.name like '{}'
+        ORDER BY cities.id ASC""".format(sys.argv[4]))
 
     '''
     execute sql code
@@ -40,11 +35,7 @@ if __name__ == "__main__":
     '''
     fetching the results
     '''
-    for row in myresult:
-        print(row[0])
-
-    mydb.close()
-
+    print(", ".join(row[0] for row in myresult))
     '''
     traversal
     '''
