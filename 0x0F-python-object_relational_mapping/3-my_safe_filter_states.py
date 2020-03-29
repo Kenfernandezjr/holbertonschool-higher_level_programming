@@ -25,7 +25,8 @@ if __name__ == "__main__":
     '''
     sql variable
     '''
-    mycursor.execute("""SELECT * FROM states WHERE BINARY name = %s ORDER BY states.id ASC""", (platform,))
+    mycursor.execute("""SELECT * FROM states WHERE BINARY name = %s ORDER BY
+    states.id ASC""", (platform,))
     '''
     execute sql code
     '''
