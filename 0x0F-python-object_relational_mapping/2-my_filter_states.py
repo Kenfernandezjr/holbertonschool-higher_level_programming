@@ -21,7 +21,7 @@ if __name__ == "__main__":
     '''
     cursor
     '''
-    sql = ("SELECT * FROM states WHERE name Like '{}' ORDER by name ASC".format(sys.argv[4]))
+    sql = ("SELECT * FROM states WHERE name Like '{}'".format(sys.argv[4]))
     '''
     sql variable
     '''
