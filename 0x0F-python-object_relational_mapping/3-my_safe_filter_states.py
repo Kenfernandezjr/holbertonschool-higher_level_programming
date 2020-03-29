@@ -21,12 +21,11 @@ if __name__ == "__main__":
     '''
     cursor
     '''
-    sql = ("""SELECT * FROM states WHERE BINARY name='{}' ORDER BY states.id
-    ASC""".format(sys.argv[4]))
+    platform = sys.argv[4]
     '''
     sql variable
     '''
-    mycursor.execute(sql)
+    mycursor.execute("""SELECT * FROM states WHERE BINARY name = %s ORDER BY states.id ASC""", (platform,))
     '''
     execute sql code
     '''
@@ -36,6 +35,8 @@ if __name__ == "__main__":
     '''
     for x in myresult:
         print(x)
+
+    mydb.close()
 
     '''
     traversal
