@@ -18,7 +18,7 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
     if not states:
-        print("")
+        print("Nothing")
     for u in session.query(State).order_by(State.id).all().limit(1):
         print("{}: {}".format(u.id, u.name))
 
