@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" script to get request """
+""" script to get X-request-id  """
 
 
 import urllib.request
