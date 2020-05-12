@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-const requesting = require('requesting');
+const request = require('request');
 
-requesting
+request
   .get('http://swapi.co/api/films/' + process.argv[2],
     (error, response, text) => {
       if (error) throw error;

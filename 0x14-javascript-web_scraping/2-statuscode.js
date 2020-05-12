@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-const requesting = require('requesting');
+const request = require('request');
 
-requesting
+request
   .get(process.argv[2])
   .on('response', (response) => {
     console.log('code:', response.statusCode);
