@@ -1,10 +1,11 @@
 #!/usr/bin/node
 
 const request = require('request');
+let urls = 'https://swapi-api.hbtn.io/api/films/';
+const contact = process.argv[2];
+const res = urls.concat(contact);
 
-request
-  .get('http://swapi.co/api/films/' + process.argv[2],
-    (error, response, text) => {
-      if (error) throw error;
-      console.log(JSON.parse(text).title);
-    });
+request.get(res, function (error, response, text) {
+    if (error) throw error;
+    console.log(JSON.parse(text).title);
+});
