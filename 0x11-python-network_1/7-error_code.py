@@ -10,4 +10,4 @@ if __name__ == "__main__":
     if red.status_code == 200:
         print(red.text)
     else:
-        print('Error code: {}'.format(r.status_code))
+        print('Error code: {}'.format(red.status_code))
