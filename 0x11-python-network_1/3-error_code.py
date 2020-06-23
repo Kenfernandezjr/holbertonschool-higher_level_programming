@@ -6,10 +6,10 @@ from sys import argv
 
 
 if __name__ == "__main__":
-
     try:
         with urllib.request.urlopen(argv[1]) as response:
-            print(response.read().decode('utf-8'))
+            r = response.read()
+            print(r.decode('utf-8'))
 
-    except urllib.error.HTTPError as bad:
-        print("Error code: {}".format(bad.code))
+    except urllib.error.HTTPError as e:
+        print("Error code: {}".format(e.code))
