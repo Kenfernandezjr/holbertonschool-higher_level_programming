@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ script to get X-request-id  """
 
-
 import urllib.request
 from sys import argv
 
